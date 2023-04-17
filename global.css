@@ -1,0 +1,31 @@
+.navbar {
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar .back>svg {
+    width: 42px;
+    transition: all .3s ease;
+    transform: rotate(-100deg);
+}
+
+.navbar .back {
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.navbar .back:hover {
+    color: #f7ab0a;
+
+}
+
+.navbar .back:hover svg {
+    transform: scale(1.09) rotate(-100deg) translate(4px, -4px);
+}

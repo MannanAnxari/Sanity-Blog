@@ -1,12 +1,14 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { defineConfig } from 'sanity'
+import { deskTool } from 'sanity/desk'
+import { visionTool } from '@sanity/vision'
+import { schemaTypes } from '../new-blogg/schemas'
+import { myTheme } from './theme'
+import StudioNavbar from './components/StudioNavbar'
 
 export default defineConfig({
+  basePath: '/studio',
   name: 'default',
-  title: 'new-blogg',
-
+  title: 'Techy Blox',
   projectId: 'u0pkzdiq',
   dataset: 'production',
 
@@ -14,5 +16,13 @@ export default defineConfig({
 
   schema: {
     types: schemaTypes,
+
   },
+  studio: {
+    components: { 
+      
+      // navbar: StudioNavbar,
+    }
+  },
+  theme: myTheme
 })
