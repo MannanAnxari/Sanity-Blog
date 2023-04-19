@@ -20,7 +20,6 @@ export default defineConfig({
   },
   studio: {
     components: { 
-      
       // navbar: StudioNavbar,
     }
   },
